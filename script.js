@@ -11,7 +11,7 @@ const calculatorScreen=document.querySelector(".calculator-screen");
 const updateScreen=(number)=>{
     calculatorScreen.value=number;
 }
-
+//menyimpan angka-angka
 let prevNumber='';
 let calculationOperator='';
 let currentNumber='0';
@@ -40,7 +40,7 @@ const inputOperator=(operator)=>{
     calculationOperator=operator;
     currentNumber='';
 }
-
+//mengaktifkan fungsi kalkulasi
 const equalSign=document.querySelector(".equal-sign");
 equalSign.addEventListener('click',()=>{
     calculate();
